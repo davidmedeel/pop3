@@ -1,0 +1,257 @@
+
+author = "Medel";
+onLoadName = "Plata o Plomo || POP 3";
+onLoadMission = "Plata o Plomo || POP 3";
+loadScreen = "medel\imagenes\logo.paa";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = 1;
+disableChannels[] = {
+	{0, true, true}, //--- Chat Global
+	{1, true, true}, //--- Side Chat Policia
+	{2, true, true}, //--- Canal de Comandante
+	{3, false, false}, //--- Canal de Grupo
+	{4, false, false}, //--- Canal del Vehiculo
+	{5, false, false}, //--- Comunicacion Directa
+	{6, true, true},	//--- Sistema de Chat
+	{7, true, true},  //--- Side Chat para Civiles
+	{8, true, true}  //--- Side Chat para EMS
+};
+
+enableDebugConsole[] = { "76561198844937661", "76561198097127402" };
+
+respawnDialog = 0;
+respawnButton = 0;
+
+class CfgServer {
+    DatabaseName = "pop3";
+    DebugMode = 1; //Consola de depuracion / 0 = Desactivado | 1 = Activado
+    HeadlessSupport = 0; //HeadslessSupport / 0 = Desactivado | 1 = Activado
+};
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 139;
+};
+
+#include "BK_FrameWork\BlackFeameWorkDIalogs\_BK_Dlg_All_IncludesDef.h"
+#include "dialog\MasterHandler.h"
+#include "BK_FrameWork\BlackFeameWorkDIalogs\_BK_Dlg_All_Includes.h"
+#include "VVS\menu.h"
+
+class RscTitles
+{
+	#include "dialog\progress.hpp"
+	#include "dialog\a3ljailhud.hpp"
+	#include "dialog\badgeDialogV2.h"
+	#include "dialog\DNI_dialog.h"
+	#include "dialog\EMSDNI_dialog.h"
+
+	#include "dialog\roboDeDatos.hpp"
+	#include "dialog\masuno.hpp"
+	#include "dialog\barrita.hpp"
+	#include "dialog\anuncio.hpp"
+
+	#include "dialog\HUDica.hpp"
+	//#include "dialog\logo.hpp"
+	#include "dialog\sangrado.hpp"
+};
+
+//class CfgRemoteExec
+//{
+//#include "cfgRemoteExec.h"
+//};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+	#include "ica\funcionesica.h"
+	#include "VVS\Functions.h"
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+
+	class purge
+    {
+        name = "purge";
+        sound[] = {"\sounds\la_purga.ogg",1.0,1.0};
+        titles[] = {};
+    };
+
+	class cinturon
+    {
+        name = "cinturon";
+        sound[] = {"\sounds\cinturon.ogg",1.0,1.0};
+        titles[] = {};
+    };
+};
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Mision Fallida";
+		subtitle = "No estas en la whitelist de este rol";
+		description = "No tienes acceso a este rol debido a que no te encuentras en la whitelist de dicho.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+    class Frontera {
+        title = "Cambiate tu Nombre";
+        subTitle = "";
+        description = "Pon tu anterior nombre para poder entrar a jugar!";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class Kick {
+        title = "Te han Expulsado";
+        subTitle = "";
+        description = "Un admin te ha expulsado";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+	class autoclick {
+        title = "Guarro, no uses macros";
+        subTitle = "Está prohibido usar macros";
+        description = "El uso de esto es baneo permanentemente, todo esto queda guardado, ven a TS3 a hablar.";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+	}
+
+    class FinServicio {
+        title = "Has salido de Servicio";
+        subTitle = "";
+        description = "Has salido de servicio, muchas gracias por tus servicios!";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+	class errorica
+	{
+		title = "Estabas bugeado";
+		subtitle = "y tienes que reiniciar la misión";
+		description = "Contacta con un admin";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+
+	class TextMessage
+	{
+		title = "Received A Text Message";
+		iconPicture = "\pop_iconos\icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "\pop_iconos\icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "\pop_iconos\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "\pop_iconos\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+
+		class opcMessage
+	{
+		title = "Mensaje de Evento";
+		iconPicture = "\pop_iconos\icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+
+
+	class EMP_Hit
+	{
+		title = "EMP";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+	class Regalo
+	{
+		title = "%1"; // fondo negro
+		iconPicture = "\A3\ui_f\data\map\Vehicle\icons\pictureparachute_ca.paa";
+		iconText = ""; // Short text displayed over the icon. Colored by "color", filled by arguments.
+		description = "%2"; // Brief description displayed as structured text. Colored by "color", filled by arguments.
+		color[] = {1,0.6,0,0.9}; // color del icono y del texto
+		duration = 5;
+		priority = 3;
+		difficulty[] = {"netStats"};
+	};
+};
