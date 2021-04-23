@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=10020;
+		nextID=10022;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5054;
+		nextID=5088;
 	};
 	class Camera
 	{
-		pos[]={846.30731,583.25037,5317.9546};
-		dir[]={-0.72992176,-0.64032322,-0.23921409};
-		up[]={-0.60848498,0.76809752,-0.19941573};
-		aside[]={-0.31143266,-3.4808181e-007,0.95028031};
+		pos[]={8737.6475,59.794571,6757.063};
+		dir[]={-0.32783094,-0.27460271,0.90406483};
+		up[]={-0.093653694,0.96150917,0.25826815};
+		aside[]={0.94019824,2.0383231e-006,0.34093541};
 	};
 };
 binarizationWanted=0;
-sourceName="POP3";
+sourceName="POPLife";
 addons[]=
 {
 	"A3_Ui_F",
@@ -722,7 +722,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2745;
+		items=2747;
 		class Item0
 		{
 			dataType="Marker";
@@ -56613,11 +56613,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={192.026,191.68095,10172.359};
+				position[]={180.26353,238.38571,10130.521};
 				angles[]={1.3700311,0,0.55499727};
 			};
 			id=4408;
 			type="ModuleCurator_F";
+			atlOffset=-0.013366699;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56635,7 +56636,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ID";
+							value="76561198097127402";
 						};
 					};
 				};
@@ -56673,7 +56674,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="Pacheco";
 						};
 					};
 				};
@@ -80454,7 +80455,7 @@ class Mission
 			position[]={6123.9385,0,3894.127};
 			name="cop_ship_3";
 			type="Empty";
-			angle=7.0258389;
+			angle=7.0258384;
 			id=9866;
 			atlOffset=12.734607;
 		};
@@ -83047,6 +83048,228 @@ class Mission
 			type="pop_licencias_Icon";
 			colorName="ColorRed";
 			id=10019;
+		};
+		class Item2745
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={180.25015,238.43042,10130.531};
+				angles[]={1.3700311,0,0.55499727};
+			};
+			id=10020;
+			type="ModuleCurator_F";
+			atlOffset=0.036697388;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198887827766";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Mohamed";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item2746
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={180.25813,238.40367,10130.525};
+				angles[]={1.3700311,0,0.55499727};
+			};
+			id=10021;
+			type="ModuleCurator_F";
+			atlOffset=0.0068359375;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198132281256";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Annibal";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
