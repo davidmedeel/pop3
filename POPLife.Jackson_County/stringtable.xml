@@ -3137,7 +3137,7 @@
 			<Portuguese>Sua casa foi trancada!</Portuguese>
 		</Key>
 		<Key ID="STR_House_SellHouseMSG">
-			<Original>¿Estas seguro querer vender la casa? El valor de venta es de: &lt;t color='#8cff9b'&gt;0€&lt;/t&gt; Graba un video vendiendo la casa y rellena el formulario de devolución a el foro www.streekrp.es</Original>
+			<Original>¿Estas seguro querer vender la casa? El valor de venta es de: &lt;t color='#8cff9b'&gt;0€&lt;/t&gt; Graba un video vendiendo la casa y rellena el formulario de devolución en el foro.</Original>
 		</Key>
 	</Package>
 	<Package name="Vehicle_Service">

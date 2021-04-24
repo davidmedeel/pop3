@@ -1,0 +1,18 @@
+_pos = position player; 
+_bolt = 'LightningBolt' createVehicle _pos; 
+_bolt setdamage 5; 
+_light = '#lightpoint' createVehicle _pos; 
+_light setposatl [_pos select 0,_pos select 1,(_pos select 2) + 10]; 
+_light setLightDayLight true; 
+_light setLightBrightness 300; 
+_light setLightAmbient [0.05, 0.05, 0.1]; 
+_light setlightcolor [1, 1, 2]; 
+uiSleep 0.1; 
+_light setLightBrightness 0; 
+uiSleep 0.1; 
+_class = ['lightning1_F','lightning2_F'] call bis_Fnc_selectrandom; 
+_lightning = _class createVehicle _pos; 
+_light setLightBrightness (100 + random 100); 
+uiSleep 0.1; 
+deleteVehicle _lightning; 
+deleteVehicle _light;

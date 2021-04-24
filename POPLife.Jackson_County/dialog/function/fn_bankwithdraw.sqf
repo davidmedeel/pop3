@@ -7,8 +7,7 @@ if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notn
 if(_val > medel_atmdin) exitWith {hint localize "STR_ATM_NotEnoughFunds"};
 if(_val < 100 && medel_atmdin > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"}; //Temp fix for something.
 
-medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_val;
+medel_din = medel_din + _val;
 medel_atmdin = medel_atmdin - _val;
 hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];
 [] call life_fnc_atmMenu;

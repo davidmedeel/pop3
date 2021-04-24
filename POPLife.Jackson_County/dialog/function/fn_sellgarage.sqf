@@ -24,8 +24,7 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];
 
 _price = 0; // esto hace que dé 0
-medel_atmdin = medel_atmdin + 
- medel_dinmedel_din_price;
+medel_atmdin = medel_atmdin + _price;
 
 
 

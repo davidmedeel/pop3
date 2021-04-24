@@ -69,8 +69,7 @@ _this spawn {
 				};
 			
 				hint parseText format["<t color='#00FF00' size='1.5'>HAS GANADO</t><br/><t color='%3' size='1.5'>%1</t><br/><t align='left'>Has ganado %2€</t>", _medalla, _premio, _color];
-				medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_premio;
+				medel_din = medel_din + _premio;
 			};
 		};
 		
@@ -84,6 +83,7 @@ _this spawn {
 			if(_finishTime < (_firstCond select 1)) then {
 				hint "Has finalizado correctamente la prueba Ya tienes el Permiso B";
 				missionNamespace setVariable[("license_civ_driver"),true];
+				profileNamespace setVariable ["puntosCarnet", 15];
 				_coche = vehicle player;
 				_coche setFuel 0;
 				player allowDamage false;
@@ -108,12 +108,13 @@ _this spawn {
 			_firstCond = _raceConfig select 2;
 			
 			if(vehicle player != player) then {
-				(vehicle player) setFuel 0;
+				vehicle player setFuel 0;
 			};
 			
 			if(_finishTime < (_firstCond select 1)) then {
 				hint "Has finalizado correctamente la prueba. Ya tienes el carnet de camion.";
 				missionNamespace setVariable[("license_civ_truck"),true];
+				profileNamespace setVariable ["puntosCarnet", 15];
 				_coche = vehicle player;
 				_coche setFuel 0;
 				player allowDamage false;

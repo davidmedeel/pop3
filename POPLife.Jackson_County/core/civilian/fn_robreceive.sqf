@@ -7,8 +7,7 @@ private["_cash"];
 _cash = [_this,0,0,[0]] call BIS_fnc_param;
 if (side player == civilian) then {
 	if(_cash == 0) exitWith {titleText[localize "STR_Civ_RobFail","PLAIN"]};
-	medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_cash;
+	medel_din = medel_din + _cash;
 	titleText[format[localize "STR_Civ_Robbed",[_cash] call life_fnc_numberText],"PLAIN"];
 } else {
 	[player, ["fondosPublicos"]] call ica_fnc_varToServer; waitUntil {recibido};

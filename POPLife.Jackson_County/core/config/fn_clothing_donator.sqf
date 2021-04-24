@@ -710,6 +710,7 @@ switch (_filter) do
     if(call (life_donator) > 0) then 
     { 
    [ 
+   ["medel_casco_motocross",nil,500*Desc], 
     ["Payday_GeneralO",nil,500*Desc], 
     ["pop_palestino",nil,500*Desc], 
     ["Kio_Pirate_Hat",nil,500*Desc], 

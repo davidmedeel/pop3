@@ -13,6 +13,7 @@ medel_markers = false;
 nombresAdminCheck = nil;
 deServicio = 0;
 nombreCambiado = 0;
+vestidoBombero = 0;
 life_query_time = time;
 life_action_delay = time;
 life_session_completed = false;
@@ -129,7 +130,8 @@ switch (playerSide) do
 	case west:
 	{
 		medel_atmdin = 50000; //Starting Bank Money
-		life_paycheck = 2200; //Aumentado dado que les estan matando seguido.
+		//life_paycheck = 2200; //Aumentado dado que les estan matando seguido.
+		life_paycheck = 3000; //Aumentado dado que les estan matando seguido.
 	};
 	case civilian:
 	{
@@ -140,7 +142,8 @@ switch (playerSide) do
 	case independent:
 	{
 		medel_atmdin = 50000;
-		life_paycheck = 2800;
+		//life_paycheck = 2800;
+		life_paycheck = 4000;
 	};
 
 	case east:

@@ -85,8 +85,7 @@ class FSM
                          "	systemChat localize ""STR_FSM_MissedPay"";" \n
                          "}" \n
                          "	else" \n
-                         "{		medel_atmdin = medel_atmdin + 
- medel_dinmedel_din(call life_paycheck);" \n
+                         "{		medel_atmdin = medel_atmdin + (call life_paycheck);" \n
                          "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
                          "};" \n
                          "" \n

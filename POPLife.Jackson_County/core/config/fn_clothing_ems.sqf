@@ -22,7 +22,7 @@ switch (_filter) do
 			["POP_EMS1","Uniforme de GAR",1000],
 			["","----- Otros -----",0],
 			["RDS_UNIFORM_DOCTOR","Uniforme de Cirujano",1000],
-			["U_C_FireFighter","Uniforme de Bombero",1000],
+			["medel_uniforme_bombero","Uniforme de Bombero",1000],
 			["POP_EMS9","Uniforme de Buzo",1000]
 		];
 	};

@@ -36,8 +36,7 @@ removeAllActions _unit;
 	sleep 10*60;
 	
 	hint format ["Has matado a %1 infieles!! Recibes %2€ por tu azaña!!", _this select 0, ((_this select 0) * 15000)];
-	medel_atmdin = medel_atmdin + 
- medel_dinmedel_din(_this select 0 * 15000);
+	medel_atmdin = medel_atmdin + (_this select 0 * 15000);
 	
 	["Money Log",format [
 		"ATENTADO - %1(%4) ha ganado %2 haciendo un atentado y matando a %3 personas || Dinero en banco : %6 - Dinero en mano %5",

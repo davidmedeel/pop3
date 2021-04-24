@@ -27,8 +27,7 @@ if((_itemInfo select 6) != "CfgVehicles") then
 if(_bad != "") exitWith {hint _bad};
 if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 {
-    medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_price;
+    medel_din = medel_din + _price;
     [_item,false] call life_fnc_handleItem;
     hint parseText format["Ha vendido %1 Por <t color='#8cff9b'>%2$</t>",_itemInfo select 1,[_price] call life_fnc_numberText];
     [nil,(uiNamespace getVariable["Weapon_Shop_Filter",0])] call life_fnc_weaponShopFilter; //Update the menu.

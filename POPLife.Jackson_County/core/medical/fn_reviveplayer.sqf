@@ -66,8 +66,7 @@ if((player getVariable["restrained",false])) exitWith {life_action_inUse = false
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 
-medel_atmdin = medel_atmdin + 
- medel_dinmedel_din(call life_revive_fee);
+medel_atmdin = medel_atmdin + (call life_revive_fee);
 life_action_inUse = false;
 _target setVariable["Revive",TRUE,TRUE];
 [profileName] remoteexeccall ["life_fnc_revived",_target];

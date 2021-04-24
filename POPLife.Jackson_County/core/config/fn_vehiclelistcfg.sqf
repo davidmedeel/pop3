@@ -365,6 +365,8 @@ switch (_shop) do {
 			["POP_Mercedes_Sprinter_gc", 5000],
 			["renault_trafic_ATGC", 5000],
 			["nissan_pathfinder_atgc", 5000],
+			["bmw_1200_rt", 5000],
+			["kawasaki_klx", 5000],
 			["pop_a3_audiq7_camuflado", 5000],
 			["pop_c63_2015_camuflado", 5000],
 			["pop_mitsubishi_asx_camuflado", 5000],
@@ -486,9 +488,10 @@ switch (_shop) do {
 	case "donator": {
 		if(__GETC__(life_donator) > 0) then {
 			_return = [
+			["medel_ktm_450", 100000],
 			["shounka_f430_spider_gris", 1400000],
 			["458_civ", 1065000],
-			["A45lu_civ_civilgris", 695000],			
+			["A45lu_civ_civilgris", 695000],
 			["POP_Ferrari_Enzo_rojo", 1700000],
 			["pop_laferrari_D",1400000],			
 			["f12lu_civ", 1065000],

@@ -6,6 +6,9 @@ disableSerialization;
 call ica_fnc_sync;
 [] call SOCK_fnc_updateRequest;
 
+// Compruebo childrens
+["check", 3] spawn ica_fnc_silencer;	
+
 _escSync = {
 	private["_abortButton","_thread","_syncManager"];
 	disableSerialization;

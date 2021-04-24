@@ -13,8 +13,6 @@ disableSerialization;
 
 waitUntil {!isNull (findDisplay 2900)};
 
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
-
 while {!(isNull (findDisplay 2900))} do {
 if (isNull (findDisplay 2900)) exitWith{};
 _display = findDisplay 2900;

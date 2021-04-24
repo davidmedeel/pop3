@@ -61,8 +61,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 		waitUntil {!life_impound_inuse};
 		hint format[localize "STR_NOTF_Impounded",_type,_price];
 		[0,format[localize "STR_NOTF_HasImpounded",profileName,(_vehicleData select 0) select 1,_vehicleName]] remoteexeccall ["life_fnc_broadcast",-2];
-		medel_atmdin = medel_atmdin + 
- medel_dinmedel_din_price;
+		medel_atmdin = medel_atmdin + _price;
 	}
 		else
 	{

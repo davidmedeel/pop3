@@ -27,5 +27,13 @@ if(primaryWeapon _unit != "") then
 _sangre = (1 - (damage _unit)) * 100, "%";
 
 if(count _attach == 0) then {_attach = "Ninguno"};
-_text ctrlSetStructuredText parseText format["Nombre: %1<br/>Banco: %2<br/>Cartera: %3<br/>Uniforme: %4<br/>Ropa: %5<br/>Sangre: %6<br/>Primaria: %7<br/>Secundaria: %8<br/><t align='center'>Objetos Principales</t><br/>%9",
-_unit getVariable["realname",name _unit],[_ret select 0] call life_fnc_numberText,[_ret select 1] call life_fnc_numberText, _uni,_vest,_sangre,_prim,_sec,_attach];
+
+_nombreFalsificado = _unit getvariable "nombreFake";
+
+if(_nombreFalsificado isEqualTo "any" OR _nombreFalsificado isEqualTo "") then {_nombreFalsificado == "Ninguno" };
+
+_text ctrlSetStructuredText parseText format["Nombre: %1<br/>Banco: %2<br/>Cartera: %3<br/>Uniforme: %4<br/>Ropa: %5<br/>Sangre: %6<br/>Primaria: %7<br/>Secundaria: %8<br/>Nombre falsificado: %9<br/><t align='center'>Objetos Principales</t><br/>%10",
+_unit getVariable["realname",name _unit],[_ret select 0] call life_fnc_numberText,[_ret select 1] call life_fnc_numberText, _uni,_vest,_sangre,_prim,_sec,_nombreFalsificado,_attach];
+
+/*_text ctrlSetStructuredText parseText format["Nombre: %1<br/>Banco: %2<br/>Cartera: %3<br/>Uniforme: %4<br/>Ropa: %5<br/>Sangre: %6<br/>Primaria: %7<br/>Secundaria: %8<br/><t align='center'>Objetos Principales</t><br/>%9",
+	_unit getVariable["realname",name _unit],[_ret select 0] call life_fnc_numberText,[_ret select 1] call life_fnc_numberText, _uni,_vest,_sangre,_prim,_sec,_attach];*/

@@ -15,8 +15,7 @@ if(_value > _gFund) exitWith {hint "No hay tanto dinero en los fondos de la Mafi
 if(_val < 100 && _gFund > 20000000) exitWith {hint localize "STR_ATM_WithdrawMin"};
 
 __SUB__(_gFund,_value);
-medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_value;
+medel_din = medel_din + _value;
 grpPlayer setVariable ["gang_bank",_gFund,true];
 
 hint format [localize "STR_ATM_sacarMafia",[_value] call life_fnc_numberText];

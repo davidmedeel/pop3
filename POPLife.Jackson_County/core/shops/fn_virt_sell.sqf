@@ -25,8 +25,7 @@ _price = (_price * _amount);
 _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
-	medel_atmdin = medel_atmdin + 
- medel_dinmedel_dinmedel_dinmedel_din_price;
+	medel_din = medel_din + _price;
 	[] call life_fnc_virt_update;
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText];	
 };

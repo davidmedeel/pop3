@@ -9,8 +9,7 @@ if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_no
 if(_value > medel_din) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
 medel_din = medel_din - _value;
-medel_atmdin = medel_atmdin + 
- medel_dinmedel_din_value;
+medel_atmdin = medel_atmdin + _value;
 
 
 

@@ -50,9 +50,9 @@ diag_log "::Life Client:: Executed custom client functions";
 
 titleText ["Espera a que el servidor haga sus cosas...", "PLAIN"];
 diag_log "::Life Client:: Waiting for the server to be ready..";
-waitUntil{!isNil "medel_server_isReady"};
-waitUntil{(medel_server_isReady OR !isNil "medel_server_extDB_notLoaded")};
-if(!isNil "medel_server_extDB_notLoaded") exitWith {
+waitUntil{!isNil "life_server_isReady"};
+waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
+if(!isNil "life_server_extDB_notLoaded") exitWith {
 	diag_log "::Life Client:: Server did not load extDB";
 	999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
 	999999 cutFadeOut 99999999;
@@ -130,8 +130,7 @@ life_fnc_garageRefund = compileFinal
 	_price = _this select 0;
 	_unit = _this select 1;
 	if(_unit != player) exitWith {};
-	medel_atmdin = medel_atmdin + 
- medel_dinmedel_din_price;
+	medel_atmdin = medel_atmdin + _price;
 ";
 
 [] call life_fnc_initRacing;
@@ -156,10 +155,14 @@ clickingstarted = false;
 [] spawn medel_fnc_restarts;
 [] spawn ica_fnc_anuncioDebug;
 [] spawn ica_fnc_godModeDebug;
+[] spawn ica_fnc_incendiosDebug;
 
+["init"] call ica_fnc_silencer;
 ["Init"] spawn ica_fnc_p0;
 ["Init"] spawn ica_fnc_granjero;
 ["Init"] spawn ica_fnc_limpiador;
+
+//["NPC"] spawn ica_fnc_bomberos;
 
 ["Init"] spawn ica_fnc_empresa;
 ["Init"] spawn ica_fnc_robopaco;
@@ -175,6 +178,22 @@ clickingstarted = false;
 ["Init"] spawn ica_fnc_robolezo;
 ["Init"] spawn ica_fnc_captura;
 ["Init"] spawn ica_fnc_avionetas;
+
+// -------------------------------
+// Silencer
+// -------------------------------
+
+{
+	_valor = profileNamespace getVariable [_x, 0];
+	
+	if !(_valor isEqualType 0) then {
+		[format ["%1 (UID %2) tenía el valor %3 en la variable %4", name player, getPlayerUID player, _valor, _x], "icarukLog_silencer.txt"] call des_fnc_log;	
+	};
+} forEach [
+	"GUI_BCG_RGB_R", "GUI_BCG_RGB_G", "GUI_BCG_RGB_B", "GUI_BCG_RGB_A",
+	"IGUI_GCG_RGB_R", "IGUI_GCG_RGB_G", "IGUI_GCG_RGB_B", "IGUI_GCG_RGB_A", 
+	"IGUI_grid_mission_W", "IGUI_grid_mission_H"
+];
 
 diag_log "--------------------------------------------------------------";
 diag_log "-------- Jugadores en modo Hulk (server)... ----------";
