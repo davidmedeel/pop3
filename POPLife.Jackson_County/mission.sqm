@@ -8,11 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-<<<<<<< Updated upstream
-		nextID=10022;
-=======
-		nextID=10026;
->>>>>>> Stashed changes
+		nextID=10028;
 	};
 	class MarkerIDProvider
 	{
@@ -20,25 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< Updated upstream
-		nextID=5088;
+		nextID=5190;
 	};
 	class Camera
 	{
-		pos[]={8737.6475,59.794571,6757.063};
-		dir[]={-0.32783094,-0.27460271,0.90406483};
-		up[]={-0.093653694,0.96150917,0.25826815};
-		aside[]={0.94019824,2.0383231e-006,0.34093541};
-=======
-		nextID=5156;
-	};
-	class Camera
-	{
-		pos[]={8493.3125,23.718842,6391.937};
-		dir[]={-0.9320026,-0.35551077,0.071341403};
-		up[]={-0.35453263,0.93464816,0.027138993};
-		aside[]={0.076329038,-1.0358926e-006,0.99713218};
->>>>>>> Stashed changes
+		pos[]={191.26909,246.18214,10139.326};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -737,11 +722,7 @@ class Mission
 	};
 	class Entities
 	{
-<<<<<<< Updated upstream
-		items=2747;
-=======
-		items=2751;
->>>>>>> Stashed changes
+		items=2753;
 		class Item0
 		{
 			dataType="Marker";
@@ -56632,12 +56613,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={180.26353,238.38571,10130.521};
+				position[]={192.026,191.68095,10172.359};
 				angles[]={1.3700311,0,0.55499727};
 			};
 			id=4408;
 			type="ModuleCurator_F";
-			atlOffset=-0.013366699;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -80474,11 +80454,7 @@ class Mission
 			position[]={6123.9385,0,3894.127};
 			name="cop_ship_3";
 			type="Empty";
-<<<<<<< Updated upstream
-			angle=7.0258384;
-=======
-			angle=7.0258374;
->>>>>>> Stashed changes
+			angle=7.0258369;
 			id=9866;
 			atlOffset=12.734607;
 		};
@@ -83074,22 +83050,11 @@ class Mission
 		};
 		class Item2745
 		{
-<<<<<<< Updated upstream
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={180.25015,238.43042,10130.531};
-				angles[]={1.3700311,0,0.55499727};
-			};
-			id=10020;
-			type="ModuleCurator_F";
-			atlOffset=0.036697388;
-=======
 			dataType="Marker";
 			position[]={8716.0029,97.410004,4643.1738};
 			name="Incendio_1";
 			type="Empty";
-			angle=48.425991;
+			angle=48.425987;
 			id=10020;
 		};
 		class Item2746
@@ -83098,7 +83063,7 @@ class Mission
 			position[]={8966.9541,156.34267,5822.1709};
 			name="Incendio_2";
 			type="Empty";
-			angle=48.425987;
+			angle=48.425983;
 			id=10021;
 		};
 		class Item2747
@@ -83107,7 +83072,7 @@ class Mission
 			position[]={8423.7607,56.360172,7851.1533};
 			name="Incendio_3";
 			type="Empty";
-			angle=48.425983;
+			angle=48.42598;
 			id=10022;
 			atlOffset=-7.6293945e-006;
 		};
@@ -83117,7 +83082,7 @@ class Mission
 			position[]={4875.0684,239.26965,7282.0518};
 			name="Incendio_4";
 			type="Empty";
-			angle=48.425983;
+			angle=48.42598;
 			id=10023;
 			atlOffset=3.0517578e-005;
 		};
@@ -83136,12 +83101,62 @@ class Mission
 			};
 			id=10024;
 			type="Land_Gate_C";
->>>>>>> Stashed changes
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-<<<<<<< Updated upstream
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2750
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8489.6074,21.830448,6394.5332};
+				angles[]={0,0.16083209,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="MEDEL_NPC_BOMBEROS";
+			};
+			id=10025;
+			type="POP_npc_doctor";
+		};
+		class Item2751
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={191.24899,246.00285,10139.463};
+				angles[]={1.3700311,0,0.55499727};
+			};
+			id=10026;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
 					property="ModuleCurator_F_Owner";
 					expression="_this setVariable ['Owner',_value,true];";
 					class Value
@@ -83193,7 +83208,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Mohamed";
+							value="Moha";
 						};
 					};
 				};
@@ -83201,10 +83216,6 @@ class Mission
 				{
 					property="ModuleInfo";
 					expression="false";
-=======
-					property="allowDamage";
-					expression="_this allowdamage _value;";
->>>>>>> Stashed changes
 					class Value
 					{
 						class data
@@ -83216,7 +83227,6 @@ class Mission
 									"BOOL"
 								};
 							};
-<<<<<<< Updated upstream
 							value=1;
 						};
 					};
@@ -83243,17 +83253,16 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item2746
+		class Item2752
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={180.25813,238.40367,10130.525};
+				position[]={191.261,246.01086,10139.487};
 				angles[]={1.3700311,0,0.55499727};
 			};
-			id=10021;
+			id=10027;
 			type="ModuleCurator_F";
-			atlOffset=0.0068359375;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83353,32 +83362,6 @@ class Mission
 				};
 				nAttributes=5;
 			};
-=======
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item2750
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8489.6074,21.830448,6394.5332};
-				angles[]={0,0.16083209,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				name="MEDEL_NPC_BOMBEROS";
-			};
-			id=10025;
-			type="POP_npc_doctor";
->>>>>>> Stashed changes
 		};
 	};
 };
