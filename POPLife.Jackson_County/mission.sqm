@@ -8,7 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-		nextID=10028;
+		nextID=10031;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=5190;
+		nextID=5258;
 	};
 	class Camera
 	{
-		pos[]={191.26909,246.18214,10139.326};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={8118.7944,66.04892,5128.4854};
+		dir[]={0.086928822,-0.10301661,-0.99094868};
+		up[]={0.0090092411,0.9946605,-0.1026997};
+		aside[]={-0.99623609,9.0339745e-007,-0.087395214};
 	};
 };
 binarizationWanted=0;
@@ -722,7 +722,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2753;
+		items=2756;
 		class Item0
 		{
 			dataType="Marker";
@@ -8847,7 +8847,6 @@ class Mission
 				angles[]={0,3.138329,6.2826962};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -8856,7 +8855,7 @@ class Mission
 			};
 			id=774;
 			type="POP_NPC_helis";
-			atlOffset=7.6293945e-005;
+			atlOffset=0.61799622;
 		};
 		class Item611
 		{
@@ -39426,7 +39425,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-eats.jpg";
+							value="medel\imagenes\carteles\cartel-medel-eats.jpg";
 						};
 					};
 				};
@@ -39524,7 +39523,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-medel.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-medel.jpg""];}";
 			};
 			id=7937;
 			type="Land_Billboard_04_blank_F";
@@ -39565,7 +39564,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-corvusclan.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-corvusclan.jpg""];}";
 			};
 			id=7939;
 			type="Land_Billboard_04_blank_F";
@@ -39606,7 +39605,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-corvusclan.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-corvusclan.jpg""];}";
 			};
 			id=7940;
 			type="Land_Billboard_04_blank_F";
@@ -56613,11 +56612,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={192.026,191.68095,10172.359};
+				position[]={190.29633,203.95313,10144.1};
 				angles[]={1.3700311,0,0.55499727};
 			};
 			id=4408;
 			type="ModuleCurator_F";
+			atlOffset=-41.1633;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -80454,7 +80454,7 @@ class Mission
 			position[]={6123.9385,0,3894.127};
 			name="cop_ship_3";
 			type="Empty";
-			angle=7.0258369;
+			angle=7.025836;
 			id=9866;
 			atlOffset=12.734607;
 		};
@@ -80565,7 +80565,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-music.jpg";
+							value="medel\imagenes\carteles\cartel-medel-music.jpg";
 						};
 					};
 				};
@@ -80603,7 +80603,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-medel.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-medel.jpg""];}";
 			};
 			id=9924;
 			type="Land_Billboard_04_blank_F";
@@ -80666,7 +80666,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-invoice.jpg";
+							value="medel\imagenes\carteles\cartel-medel-invoice.jpg";
 						};
 					};
 				};
@@ -80726,7 +80726,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel.jpg";
+							value="medel\imagenes\carteles\cartel-medel.jpg";
 						};
 					};
 				};
@@ -80785,7 +80785,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-music.jpg";
+							value="medel\imagenes\carteles\cartel-medel-music.jpg";
 						};
 					};
 				};
@@ -80845,7 +80845,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-invoice.jpg";
+							value="medel\imagenes\carteles\cartel-medel-invoice.jpg";
 						};
 					};
 				};
@@ -80883,7 +80883,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-corvusclan.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-corvusclan.jpg""];}";
 				disableSimulation=1;
 			};
 			id=9945;
@@ -80964,7 +80964,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel.jpg";
+							value="medel\imagenes\carteles\cartel-medel.jpg";
 						};
 					};
 				};
@@ -81002,7 +81002,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-medel.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-medel.jpg""];}";
 			};
 			id=9954;
 			type="Land_Billboard_04_blank_F";
@@ -81043,7 +81043,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-medel.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-medel.jpg""];}";
 			};
 			id=9955;
 			type="Land_Billboard_04_blank_F";
@@ -81084,7 +81084,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="call{this setObjectTexture [0, ""fotos\carteles\cartel-medel.jpg""];}";
+				init="call{this setObjectTexture [0, ""medel\imagenes\carteles\cartel-medel.jpg""];}";
 			};
 			id=9956;
 			type="Land_Billboard_04_blank_F";
@@ -81226,7 +81226,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-music.jpg";
+							value="medel\imagenes\carteles\cartel-medel-music.jpg";
 						};
 					};
 				};
@@ -81286,7 +81286,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-invoice.jpg";
+							value="medel\imagenes\carteles\cartel-medel-invoice.jpg";
 						};
 					};
 				};
@@ -81346,7 +81346,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-medel-eats.jpg";
+							value="medel\imagenes\carteles\cartel-medel-eats.jpg";
 						};
 					};
 				};
@@ -81406,7 +81406,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\josete.jpg";
+							value="medel\imagenes\carteles\josete.jpg";
 						};
 					};
 				};
@@ -82649,7 +82649,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="fotos\carteles\cartel-pop.jpg";
+							value="medel\imagenes\carteles\cartel-pop.jpg";
 						};
 					};
 				};
@@ -83051,40 +83051,42 @@ class Mission
 		class Item2745
 		{
 			dataType="Marker";
-			position[]={8716.0029,97.410004,4643.1738};
+			position[]={8563.8799,97.409912,6489.5161};
 			name="Incendio_1";
 			type="Empty";
-			angle=48.425987;
+			angle=48.42598;
 			id=10020;
+			atlOffset=68.835144;
 		};
 		class Item2746
 		{
 			dataType="Marker";
-			position[]={8966.9541,156.34267,5822.1709};
+			position[]={8616.4385,156.34277,6950.7578};
 			name="Incendio_2";
 			type="Empty";
-			angle=48.425983;
+			angle=48.425976;
 			id=10021;
+			atlOffset=135.44278;
 		};
 		class Item2747
 		{
 			dataType="Marker";
-			position[]={8423.7607,56.360172,7851.1533};
+			position[]={5190.52,56.360107,3003.7844};
 			name="Incendio_3";
 			type="Empty";
-			angle=48.42598;
+			angle=48.425972;
 			id=10022;
-			atlOffset=-7.6293945e-006;
+			atlOffset=1.3666039;
 		};
 		class Item2748
 		{
 			dataType="Marker";
-			position[]={4875.0684,239.26965,7282.0518};
+			position[]={6760.4238,239.26978,5138.6265};
 			name="Incendio_4";
 			type="Empty";
-			angle=48.42598;
+			angle=48.425972;
 			id=10023;
-			atlOffset=3.0517578e-005;
+			atlOffset=179.42151;
 		};
 		class Item2749
 		{
@@ -83319,6 +83321,136 @@ class Mission
 								};
 							};
 							value="Annibal";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
+		};
+		class Item2753
+		{
+			dataType="Marker";
+			position[]={9326.8154,20.899902,9090.626};
+			name="Incendio_5";
+			type="Empty";
+			angle=48.425972;
+			id=10028;
+			atlOffset=-9.727478e-005;
+		};
+		class Item2754
+		{
+			dataType="Marker";
+			position[]={8161.2573,54.969971,5168.2568};
+			name="Incendio_6";
+			type="Empty";
+			angle=48.425972;
+			id=10029;
+			atlOffset=0.0017127991;
+		};
+		class Item2755
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={186.258,243.33182,10141.723};
+				angles[]={1.3700311,0,0.55499727};
+			};
+			id=10030;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="76561198024932202";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Elmest";
 						};
 					};
 				};
