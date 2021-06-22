@@ -40,20 +40,3 @@ if (vehicle player == player) then {
 };
 
 ["Init"] spawn ica_fnc_p0;
-["init"] call ica_fnc_silencer;
-
-// -------------------------------
-// Silencer
-// -------------------------------
-
-{
-	_valor = profileNamespace getVariable [_x, 0];
-	
-	if !(_valor isEqualType 0) then {
-		[format ["%1 (UID %2) tenía el valor %3 en la variable %4", name player, getPlayerUID player, _valor, _x], "icarukLog_silencer.txt"] call des_fnc_log;	
-	};
-} forEach [
-	"GUI_BCG_RGB_R", "GUI_BCG_RGB_G", "GUI_BCG_RGB_B", "GUI_BCG_RGB_A",
-	"IGUI_GCG_RGB_R", "IGUI_GCG_RGB_G", "IGUI_GCG_RGB_B", "IGUI_GCG_RGB_A", 
-	"IGUI_grid_mission_W", "IGUI_grid_mission_H"
-];

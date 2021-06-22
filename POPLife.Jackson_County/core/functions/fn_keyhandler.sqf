@@ -545,11 +545,6 @@ switch (_code) do {
 		[] spawn ica_fnc_informacion;
 	};
 
-	// F7
-	case DIK_F7: {
-		createDialog "creditos";
-	};
-
 	case DIK_F8: {
 		if (isnil {dayz_mod}) then {
 			PP_colorC = ppEffectCreate ["ColorCorrections",1500];

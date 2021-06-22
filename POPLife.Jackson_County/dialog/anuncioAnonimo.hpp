@@ -84,5 +84,15 @@ class controls {
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
+
+        class credito: RscText
+        {
+            idc = -1;
+            text = "Medel"; //--- ToDo: Localize;
+            x = 0.964445 * safezoneW + safezoneX;
+            y = -0.0166667 * safezoneH + safezoneY;
+            w = 0.0412603 * safezoneW;
+            h = 0.055 * safezoneH;
+        };
 	};
 };

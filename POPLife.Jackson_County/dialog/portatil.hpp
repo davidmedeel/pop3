@@ -114,6 +114,15 @@ class documentos {
             h = 0.055 * safezoneH;
            colorBackground[] = {0,0,0,0};
         };
+        class credito: RscText
+        {
+	        idc = -1;
+	        text = "Icaruk"; //--- ToDo: Localize;
+	        x = -0.000156274 * safezoneW + safezoneX;
+	        y = -0.00599999 * safezoneH + safezoneY;
+	        w = 0.0773437 * safezoneW;
+	        h = 0.033 * safezoneH;
+        };
 	};
 };
 

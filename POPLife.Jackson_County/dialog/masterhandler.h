@@ -39,7 +39,6 @@
 #include "informacion.hpp"
 #include "autoEquipador.hpp"
 #include "desguace.hpp"
-#include "creditos.hpp"
 
 // Icaruk viejo
 #include "menuElectricidad.hpp"

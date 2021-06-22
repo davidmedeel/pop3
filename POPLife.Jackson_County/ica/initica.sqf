@@ -32,8 +32,6 @@ waitUntil {!isNull (uiNamespace getVariable "HUDica")};
 
 [] call life_fnc_debug;
 
-if (_this select 1 == 0 && player distance [(getPos cursorObject) select 0, (getPos cursorObject) select 1, 0] < 12 && (cursorObject isKindOf "Car") && (primaryWeapon player)=="pop_extintor" && (damage cursorObject) > 0.9) exitWith {cursorObject setVariable ["apagado",1,true];[player,player,1] spawn ica_fnc_tiroAgua};
-
 player addAction ["", {
 	call ica_fnc_limitadorDeArmas
 }, "", 0, false, true, "DefaultAction", "isNil 'puedoDisparar' "];

@@ -83,7 +83,6 @@ _this spawn {
 			if(_finishTime < (_firstCond select 1)) then {
 				hint "Has finalizado correctamente la prueba Ya tienes el Permiso B";
 				missionNamespace setVariable[("license_civ_driver"),true];
-				profileNamespace setVariable ["puntosCarnet", 15];
 				_coche = vehicle player;
 				_coche setFuel 0;
 				player allowDamage false;
@@ -108,13 +107,12 @@ _this spawn {
 			_firstCond = _raceConfig select 2;
 			
 			if(vehicle player != player) then {
-				vehicle player setFuel 0;
+				(vehicle player) setFuel 0;
 			};
 			
 			if(_finishTime < (_firstCond select 1)) then {
 				hint "Has finalizado correctamente la prueba. Ya tienes el carnet de camion.";
 				missionNamespace setVariable[("license_civ_truck"),true];
-				profileNamespace setVariable ["puntosCarnet", 15];
 				_coche = vehicle player;
 				_coche setFuel 0;
 				player allowDamage false;

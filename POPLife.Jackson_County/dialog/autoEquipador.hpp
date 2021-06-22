@@ -9,7 +9,7 @@ class autoEquipador
 		class fondo: RscPicture
 		{
 			idc = 1200;
-			text = "medel\imagenes\autoEquipador.jpg";
+			text = "medel\imagenes\autoEquipador.paa";
 			x = 0.247343 * safezoneW + safezoneX;
 			y = 0.093 * safezoneH + safezoneY;
 			w = 0.433125 * safezoneW;

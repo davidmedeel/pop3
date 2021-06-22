@@ -49,7 +49,7 @@ life_fnc_curar = {
 
 	_medico = cursortarget; 
 	 
-	if ({side _x == INDEPENDENT} count playableUnits >= 3)  exitWith {titleText ["Lo siento, no estoy de servicio ahora mismo. Acude a un compañero...", "PLAIN"];}; 
+	if ({side _x == INDEPENDENT} count playableUnits > 3)  exitWith {titleText ["Lo siento, no estoy de servicio ahora mismo. Acude a un compañero...", "PLAIN"];}; 
 	 
 	if (medel_din < 500) exitwith {titleText ["Mis servicios cuestan 500€", "PLAIN"];}; 
 	 
