@@ -1,6 +1,7 @@
-Comerme bien los huevos
+Comerme bien los huevos ahora el fronted es mi trabajo
 
-Odio a algun pancho pero no soy racista
+https://davidmedel.es
+https://medel.es
 
 Todo lo de aqui funciona si no me crees pruebalo y m comes la polla
 
