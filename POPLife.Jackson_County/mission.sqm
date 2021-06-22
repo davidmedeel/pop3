@@ -8,11 +8,7 @@ class EditorData
 	toggles=586;
 	class ItemIDProvider
 	{
-<<<<<<< HEAD
-		nextID=10020;
-=======
 		nextID=10230;
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 	};
 	class MarkerIDProvider
 	{
@@ -20,16 +16,6 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< HEAD
-		nextID=5054;
-	};
-	class Camera
-	{
-		pos[]={846.30731,583.25037,5317.9546};
-		dir[]={-0.72992176,-0.64032322,-0.23921409};
-		up[]={-0.60848498,0.76809752,-0.19941573};
-		aside[]={-0.31143266,-3.4808181e-007,0.95028031};
-=======
 		nextID=5394;
 	};
 	class Camera
@@ -38,11 +24,10 @@ class EditorData
 		dir[]={0.90091115,-0.42578307,0.084444769};
 		up[]={0.42393878,0.90481722,0.039737102};
 		aside[]={0.09332367,-1.9171239e-007,-0.99566942};
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 	};
 };
 binarizationWanted=0;
-sourceName="POP3";
+sourceName="POPLife";
 addons[]=
 {
 	"A3_Ui_F",
@@ -741,11 +726,7 @@ class Mission
 	};
 	class Entities
 	{
-<<<<<<< HEAD
-		items=2745;
-=======
 		items=2737;
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 		class Item0
 		{
 			dataType="Marker";
@@ -56554,19 +56535,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-<<<<<<< HEAD
-				position[]={192.026,191.68095,10172.359};
-=======
 				position[]={190.29633,203.95313,10144.1};
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 				angles[]={1.3700311,0,0.55499727};
 			};
 			id=4408;
 			type="ModuleCurator_F";
-<<<<<<< HEAD
-=======
 			atlOffset=-41.1633;
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56584,7 +56558,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="ID";
+							value="76561198097127402";
 						};
 					};
 				};
@@ -56622,7 +56596,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="Pacheco";
 						};
 					};
 				};
@@ -79552,11 +79526,7 @@ class Mission
 			position[]={6123.9385,0,3894.127};
 			name="cop_ship_3";
 			type="Empty";
-<<<<<<< HEAD
-			angle=7.0258389;
-=======
 			angle=7.0258355;
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 			id=9866;
 			atlOffset=12.734607;
 		};
@@ -82117,7 +82087,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={827.73102,568.77277,5311.9341};
+				position[]={827.43152,568.77277,5313.6689};
 				angles[]={0,1.3031327,0};
 			};
 			side="Empty";
@@ -82150,8 +82120,6 @@ class Mission
 			colorName="ColorRed";
 			id=10019;
 		};
-<<<<<<< HEAD
-=======
 		class Item2722
 		{
 			dataType="Marker";
@@ -82736,7 +82704,6 @@ class Mission
 				nAttributes=1;
 			};
 		};
->>>>>>> 7712d26e1b6f7983a6d1e770ffb45a5461ecd17f
 	};
 };
 class OutroLoose
