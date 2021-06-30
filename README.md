@@ -1,6 +1,3 @@
-Comerme bien los huevos ahora el fronted es mi trabajo
-
-A ver si con esto se divide mas la comunidad de arma y se va ya a tomar por culo de una vez
 
 https://davidmedel.es
 https://medel.es
